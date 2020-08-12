@@ -34,7 +34,6 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     #My Apps
     'home',
-    'products',
     #Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
@@ -153,4 +152,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
-MEDIA_URL = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = os.path.join(BASE_DIR, 'media/')
