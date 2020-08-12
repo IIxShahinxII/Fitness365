@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     #My Apps
     'home',
+    'products',
     #Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
