@@ -57,9 +57,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-black" style="margin-top: 23px;" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link text-black" style="font-weight: 600;" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Products
+                        <div class="text-center">
+                            <div><i class="fas fa-store fa-lg"></i></div>
+                            <p class="my-0" style="font-weight: 600;">Products</p>
+                        </div>
+                        
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{% url 'products' %}?category=activewear,essentials">Sport Bottles</a>
@@ -69,9 +73,12 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-black" style="margin-top: 23px;" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link text-black" style="font-weight: 600;" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Special Offers
+                        <div class="text-center">
+                            <div><i class="fas fa-gift fa-lg"></i></div>
+                            <p class="my-0" style="font-weight: 600;">Special Offers</p>
+                        </div>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{% url 'products' %}?category=new_arrivals">New Arrivals</a>
@@ -85,7 +92,7 @@
                         aria-expanded="false">
                         <div class="text-center">
                             <div><i class="fas fa-user fa-lg"></i></div>
-                            <p class="my-0">My Account</p>
+                            <p class="my-0" style="font-weight: 600;">My Account</p>
                         </div>
                     </a>
                     <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -106,7 +113,7 @@
                         href="">
                         <div class="text-center">
                             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                            <p class="my-0">
+                            <p class="my-0" style="font-weight: 600;">
                                 {% if grand_total %}
                                 ${{ grand_total|floatformat:2 }}
                                 {% else %}
@@ -119,7 +126,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="font-weight: 600;">Search</button>
             </form>
         </div>
     </nav>

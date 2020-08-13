@@ -3,7 +3,10 @@ html {
 }
 
 body {
-    background: url('/media/homebg.jpg') no-repeat center center fixed;
+    background: linear-gradient(
+                     rgba(20, 20, 20, 0.5),
+                     rgba(20, 20, 20, 0.5)),
+                     url('/media/homebg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     font-family: 'Roboto' sans-serif;
@@ -31,14 +34,16 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    border-color: #28a745;
+    border: 5px solid;
+    color: #28a745;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    border-color: #28a745;
+    color: #28a745;
+    border: 5px solid;
 }
 
 .shop-now-button:hover,
@@ -47,12 +52,16 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #28a745;
     color: white;
 }
 
 .text-black {
     color: #000 !important;
+}
+
+.text-white {
+    color: #FFF;
 }
 
 .border-black {
@@ -69,7 +78,11 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: linear-gradient(
+                     rgba(20, 20, 20, 0.6),
+                     rgba(20, 20, 20, 0.6)),
+                     url('/media/productbg.jpg') no-repeat center center fixed;
+    background-size: cover;
 	z-index: -1;
 }
 
