@@ -62,10 +62,10 @@
                         Products
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="">Sport Bottles</a>
-                        <a class="dropdown-item" href="">Powders</a>
-                        <a class="dropdown-item" href="">Clothes</a>
-                        <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=activewear,essentials">Sport Bottles</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=jeans">Powders</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=shirts">Clothes</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=activewear,essentials,jeans,shirts">All Products</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -74,10 +74,10 @@
                         Special Offers
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="">New Arrivals</a>
-                        <a class="dropdown-item" href="">Deals</a>
-                        <a class="dropdown-item" href="">Clearance</a>
-                        <a class="dropdown-item" href="">All Specials</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=new_arrivals">New Arrivals</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=deals">Deals</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=clearance">Clearance</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=new_arrivals,deals,clearance">All Specials</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
