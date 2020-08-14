@@ -72,7 +72,7 @@ body {
     background: #000 !important;
 }
 
-.overlay {
+.overlay-products {
 	height: 100%;
 	width: 100%;
 	top: 0;
@@ -84,6 +84,16 @@ body {
                      url('/media/productbg.jpg') no-repeat center center fixed;
     background-size: cover;
 	z-index: -1;
+}
+
+.overlay-product-detail {
+    height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /* -------------------------------- Media Queries */
