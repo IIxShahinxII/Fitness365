@@ -46,6 +46,12 @@ body {
     border: 5px solid;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 5px solid black;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -87,6 +93,16 @@ body {
 }
 
 .overlay-product-detail {
+    height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+.overlay-shopping-bag {
     height: 100%;
 	width: 100%;
 	top: 0;
