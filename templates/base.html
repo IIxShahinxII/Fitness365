@@ -66,10 +66,10 @@
                         
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{% url 'products' %}?category=activewear,essentials">Sport Bottles</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?category=jeans">Powders</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?category=shirts">Clothes</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?category=activewear,essentials,jeans,shirts">All Products</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=sport_bottles">Sport Bottles</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=powders">Powders</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=clothes">Clothes</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?category=sport_bottles,powders,clothes">All Products</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -110,7 +110,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                        href="">
+                        href="{% url 'view_bag' %}">
                         <div class="text-center">
                             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                             <p class="my-0" style="font-weight: 600;">
