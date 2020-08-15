@@ -41,9 +41,23 @@ body {
 }
 
 .btn-black {
-    border-color: #28a745;
+    border-color: black;
     color: #28a745;
     border: 5px solid;
+}
+
+.btn-quantity-minus {
+    border-color: black;
+    background-color: red;
+    color: #fff;
+    border: 1px solid;
+}
+
+.btn-quantity-plus {
+    border-color: green;
+    background-color: green;
+    color: #fff;
+    border: 1px solid;
 }
 
 .btn-outline-black {
