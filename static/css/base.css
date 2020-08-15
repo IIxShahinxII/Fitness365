@@ -53,6 +53,13 @@ body {
     border: 1px solid;
 }
 
+/*--------------------------------------- btn-quantity in shopping bag --*/
+.btn-quantity-bag {
+    background: black;
+    color: white;
+}
+/*---------------------------------------End --*/
+
 .btn-quantity-plus {
     border-color: green;
     background-color: green;
@@ -141,7 +148,9 @@ a.category-badge > span.badge:hover {
     background-color: #28a745;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
