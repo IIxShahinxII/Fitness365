@@ -47,9 +47,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light nav-bg-color">
         <a class="navbar-brand" href="{% url 'home' %}">
-            <h2 class="logo-font text-black my-0"><strong>Fitness365</strong></h2>
+            <h2 class="logo-font text-white my-0"><strong>Fitness365</strong></h2>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" style="border-color: #fff; background-color: #fff;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,7 +57,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-black" style="font-weight: 600;" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link text-white" style="font-weight: 600;" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
                             <div><i class="fas fa-store fa-lg"></i></div>
@@ -73,7 +73,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link text-black" style="font-weight: 600;" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link text-white" style="font-weight: 600;" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
                             <div><i class="fas fa-gift fa-lg"></i></div>
@@ -88,7 +88,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="text-black nav-link" href="" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+                    <a class="text-white nav-link" href="" id="user-options" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         <div class="text-center">
                             <div><i class="fas fa-user fa-lg"></i></div>
@@ -109,7 +109,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link"
                         href="{% url 'view_bag' %}">
                         <div class="text-center">
                             <div><i class="fas fa-shopping-bag fa-lg"></i></div>

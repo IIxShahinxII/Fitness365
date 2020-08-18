@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
+    'checkout',
     #Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
