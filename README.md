@@ -5,31 +5,46 @@
 
 ## Description
 
-kkkkkkkk
+This web site is an online store of products that are being used in gym and for  training. It offers different producs and special offers to its user and all people around the world.
+People can navigate through the products, select as many as they want and even remove or adjust them before the purchase them.
+At the end, they are able to purchase the products that have chosen by providing billing address and entering their card information in the payment form.
 
 # UX
 
 ### Target Audience
 
- kkkkk
+ Our targets for this project are Users and Site owner. Users and site owner are able to have account and access to to our product to purchase. However, owner of the site is
+ the only one who can monitor all the purchases and products,also Add, Edit and Remove products from the website.
 
  ### User Stories
 
- 1. As a user, I want to 
- 2. As a user, I want to 
- 3. AS a user, I want to 
- 4. As a user, I want to 
- 5. As a user, I want to 
- 6. As a user, I want to 
+ 1. As a user, I want to be able to get back to the home page.
+ 2. As a user, I want to be able to have option to select a specific category or to see all product at one page.
+ 3. AS a user, I want to be able to sort the product by name and price.
+ 4. As a user, I want to be able to get back to the top page by one click instead of scrolling all the way up.
+ 5. As a user, I want to be able to see if there is any offers and also select any specific offers if exist.
+ 6. As a user, I want to be able to see all the products that I have chosen already and also be able to remove or adjust them before I purchase them.
+ 7. As a user, I want to be able to purchase my selected product/products with my payment card and receiving it/them at my address.
+ 8. As a user, I want to be able to add more items to my shopping bag without losing them by getting back to product page.
+ 9. As a user, I want to be able to create an account, login and logout easily and also would be able to see my purchase history and track my on-going purchases.
+ 10. As a user, I want to be able to find any products that I am looking for by searching them, instead of going through all the products.
+ 11. As a user, I want to be able to get to the product page by clicking a button, instead of going from the nav links.
 
  ### Site Owner Stories
 
- 1. As a owner, I want to 
- 2. As a owner, I want to 
- 3. As a owner, I want to 
- 4. As a owner, I want to 
- 5. As a owner, I want to 
- 6. As a owner, I want to 
+ 1. As a owner, I want to be able to get back to the home page.
+ 2. As a owner, I want to be able to have option to select a specific category or to see all product at one page.
+ 3. AS a owner, I want to be able to sort the product by name and price.
+ 4. As a owner, I want to be able to get back to the top page by one click instead of scrolling all the way up.
+ 5. As a owner, I want to be able to see if there is any offers and also select any specific offers if exist.
+ 6. As a owner, I want to be able to see all the products that I have chosen already and also be able to remove or adjust them before I purchase them.
+ 7. As a owner, I want to be able to purchase my selected product/products with my payment card and receiving it/them at my address.
+ 8. As a owner, I want to be able to add more items to my shopping bag without losing them by getting back to product page.
+ 9. As a owner, I want to be able to create an account, login and logout easily and also would be able to see my purchase history and track my on-going purchases.
+ 10. As a owner, I want to be able to find any products that I am looking for by searching them, instead of going through all the products.
+ 11. As a owner, I want to be able to get to the product page by clicking a button, instead of going from the nav links.
+ 12. As a owner, I want to be able to Add product and Edit product in my site and also Remove product from product page.
+ 13. As a owner, I want to be able to have access to all the purchases history of the site and monitor them.
 
  ## Design
 
@@ -41,27 +56,27 @@ I used [AdobeXD](https://creativecloud.adobe.com/apps/download/xd?promoid=B8NR3R
 
 ## Database
 
-db.sqlite3 and Amazone Web Services are used to store data at the backend.
+Postgres from Heroku and Amazone Web Services are used to store data at the backend.
 
 ## Features
 ### Existing Features
-- **Logo** - 
-- **products** - 
-            - **Sorting Products** -
-            - **Back to Top Button** -
-- **Special Offers** - 
-- **Shopping Bag** - 
-            - **Remove / Update** -
-            - **Secure Checkout** -
-                        - **checkout page** -
-            - **Keep Shopping** -
-- **My Account** - 
-            - **Registration** -
-            - **Login** -
-            - **logout** -
-            - **Manage Products** -
-- **Search** - 
-- **Purchase Button** - 
+- **Logo** - By clicking on logo, user will redirect to home page (main pag).
+- **products** - By clicking on products, user would have options to choose different category of products or select All products.
+- **Sorting Products** - In product page, user can sort by name from A-Z or Z-A and by price from high-low or viseversa.
+- **Back to Top Button** - In product page, use can see a small green button with an arrow pointed top, if he/she click on it will get back to the top.
+- **Special Offers** - By clicking on special offers, user would have option to choose different category of offers or select All offers
+- **Shopping Bag** - This page will show the products that are selected by user. User will see the total amount and has access to final step which is check out.
+- **Remove / Update** - In shopping bg page, user is able to remove item/items and also adjust the quantity.
+- **Secure Checkout** - By pressing on this button in shopping bag page, user will be redirected to check out page to compelete the purchase.
+- **checkout page** - In this page user must provide billing address and also enter the payment card info to complete the purchase.
+- **Keep Shopping** - By clicking on this button, user will be redirected to Product page and can add more items to shopping bag.
+- **My Account** - By clicking on my account, user can **Register** if he has not created any account yet. User can **Login** if he/she has created an account already.
+User can **logout** if he/she is already logged in. Only site owner has access to **Manage Products** after he login.(site owner need to have super user account for this purpose).
+- **Search** - User is able to search for any particular item he/she is looking for. if such an item exist, user will see it otherwise he/she will be redirected to All products page.
+- **Purchase Button** - By clicking on this button which is located at home page (main page), user will get to the product page.
+- **Add, Edit and Remove products** - Site owner can add or remove any item from the website but he/she needs to have super user account and then login to his/her account.
+Then, she/he can add by clicking on **Manage Products**, and remove or edit any product from the product page.
+- **Admin page** - Only site owner has access to this page, he/she can login and monitor all the purchases and products.
 
 ### Features Left to Implement
 
@@ -125,11 +140,20 @@ The code has been validated by using;
 11. Then make sure your **Github Profile** is displayed and add your **repository name** and click on **Search**.
 12. Once it find your repository then click on **Connect**.
 13. Now go to **Settings** at the top. Then click on **Reveal Config Vars**.
-14. In **Config Vars** add **IP** with value **0.0.0.0** then add **PORT** as **5000** then add **SECRET_KEY** then add **MONGO_URI** and then add **MONGO_DBNAME** which is the name of database.
+14. In **Config Vars** add **AWS_ACCESS_KEY_ID**, **AWS_SECRET_ACCESS_KEY**, **DATABASE_URL** its value is the Postgres link from Heroku, **EMAIL_HOST_PASS**, **EMAIL_HOST_USER** its value is the email and you have created for this purpose,
+**SECRET_KEY** you can get secret key by searching **secretkey generator** in google, **STRIPE_PUBLIC_KEY**, **STRIPE_SECRET_KEY**, **STRIPE_WH_SECRET**, **USE_AWS** its value must be True.
 15. Now go back to **Deploy** tab and click on **Enable Automatic Deploys**.
 16. Now click on **Deploy Branch**
 17. It will take a minute and display a message that **Your app was successfully deployed**.
 18. Click on **View** to launch your deployed app.
+
+## Important
+
+To learn how to use these IDs, and Keys, please search in google or youtube. You will find many easy and helpfull guides.
+
+In order to have **AWS_ACCESS_KEY_ID** and **AWS_SECRET_ACCESS_KEY** you need to create and account in Aws.Amazon.com
+In order to have **EMAIL_HOST_PASS**, **EMAIL_HOST_USER** you need to have google account.
+In order to have **STRIPE_PUBLIC_KEY**, **STRIPE_SECRET_KEY**, **STRIPE_WH_SECRET** you need to have stripe account.
 
 ## Local Deployment
 
