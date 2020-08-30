@@ -118,17 +118,17 @@ WSGI_APPLICATION = 'Fitness365.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# if 'DATABASE_URL' in os.environ:
-DATABASES = {
-    'default': dj_database_url.parse('postgres://chmxyfqkkxauey:558e8d54e815350055139ac1035cb0651abf5f73febbad89dafde92c2c84f3a9@ec2-34-248-165-3.eu-west-1.compute.amazonaws.com:5432/d1u1ohgogerprs')
-}
-# else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         }
-#     }
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
