@@ -131,7 +131,7 @@ The code has been validated by using;
 2. Click on **New** at the right top corner and click on **Create new app**.
 3. Choose **App name** and a **region**. Then click on **Create app**.
 4. Go to terminal window and create **requirements.txt** by running command **pip3 freeze --local > requirements.txt**
-5. Then create **Procfile** by running command **echo web: python app.py > Procfile** **Remember P is capital**
+5. Then create **Procfile** by running command **echo web: gunicorn <projectapp>.wsgi:application > Procfile** **Remember P is capital**
 6. Add these files to stagging area by running command **git add requirements.txt** & **git add Procfile**.
 7. Then commit these file respectively by running command **git commit -m "Added requirements.txt** & **git commit -m "Added Procfile**.
 8. Then push these files to **github** by running command **git push**
