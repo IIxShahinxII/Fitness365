@@ -3,7 +3,7 @@ asgiref==3.2.3
 autopep8==1.5.4
 boto3==1.12.42
 botocore==1.15.42
-certifi==2020.6.20
+certifi==2022.12.7
 chardet==3.0.4
 defusedxml==0.6.0
 distlib==0.3.1
